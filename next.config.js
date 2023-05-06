@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
+  i18n: {
+    locales: ["id", "en"],
+    defaultLocale: "id",
+    localeDetection: false,
+  },
   swcMinify: true,
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

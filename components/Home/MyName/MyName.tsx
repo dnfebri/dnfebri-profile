@@ -2,8 +2,15 @@ import React from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
+// import { Trans, useTranslation } from "react-i18next";
+import i18next, { t } from "i18next";
+import { Trans } from "react-i18next";
+
 export default function MyName(props: { finishedLoading: boolean }) {
   const router = useRouter();
+  // const { t } = useTranslation();
+  // console.log(t("common.test"));
+  
   return (
     <div
       
@@ -20,7 +27,9 @@ export default function MyName(props: { finishedLoading: boolean }) {
           }}
           className="text-AAsecondary font-mono"
         >
-          Hi, my name is
+          {/* Hi, my name is */}
+          {t("common.hiMyNameIs")}
+          {/* <Trans i18nKey="common.hiMyNameIs" /> */}
         </motion.span>
         <motion.h1
           initial={{ y: 10, opacity: 0 }}

@@ -2,8 +2,17 @@ import "../styles/globals.css";
 import { Analytics } from '@vercel/analytics/react';
 import AppContext from "../components/AppContextFolder/AppContext";
 import { useRef, useState } from "react";
+// import "../locales";
+import { useRouter } from "next/router";
+import i18n from "../locales";
 
 function MyApp({ Component, pageProps }) {
+
+  const router = useRouter();
+  if (router.locale) {
+    i18n.changeLanguage(router.locale);
+  }
+
   const timerCookie = useRef(null);
   const windowSizeTrackerRef = useRef(null);
   const mousePositionRef = useRef(null);
