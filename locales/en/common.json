@@ -1,3 +1,10 @@
 {
+  "menu": {
+    "about": "About",
+    "experience": "Experience",
+    "work": "Work",
+    "contack": "Contact",
+    "resume": "Resume"
+  },
   "hiMyNameIs": "Hi, my name is"
 }

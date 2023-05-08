@@ -14,7 +14,7 @@ const Startup = (props) => {
       HeightBy2 = window.innerHeight / 2-40;
     }
 
-    console.log("width by 2: ", WidthBy2);
+    // console.log("width by 2: ", WidthBy2);
   }
 
   return (

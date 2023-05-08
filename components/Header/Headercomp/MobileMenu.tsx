@@ -1,3 +1,5 @@
+import { t } from "i18next";
+import { MENUS } from "../../../constant/header";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import { Link } from "react-scroll";
 const MobileMenu = props => {
@@ -21,74 +23,26 @@ const MobileMenu = props => {
           className="w-3/4 h-full bg-MobileNavBarColor flex flex-col 
         justify-center items-center space-y-8 font-sans"
         >
-          <Link
-            to="aboutSection"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={200}
-            onClick={() => closeMenu()}
-            className="flex flex-col text-center space-y-2"
-          >
-            <span className="text-AAsecondary text-xs font-mono">01.</span>
-            <span
-              className="text-white font-Text2 text-sm sm:text-base
-             hover:text-AAsecondary hover:cursor-pointer duration-300"
+          {MENUS.map((menu, idx) => (
+            <Link
+              key={idx}
+              to="aboutSection"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={200}
+              onClick={() => closeMenu()}
+              className="flex flex-col text-center space-y-2"
             >
-              About
-            </span>
-          </Link>
-          <Link
-            to="WhereIhaveWorkedSection"
-            spy={true}
-            smooth={true}
-            offset={-250}
-            duration={200}
-            onClick={() => closeMenu()}
-            className="flex flex-col text-center space-y-2"
-          >
-            <span className="text-AAsecondary text-xs font-mono hover:cursor-pointer">02.</span>
-            <span
-              className="text-white font-Text2 text-sm sm:text-base
-             hover:text-AAsecondary hover:cursor-pointer duration-300"
-            >
-              Experience
-            </span>
-          </Link>
-          <Link
-            to="SomethingIveBuiltSection"
-            spy={true}
-            smooth={true}
-            offset={100}
-            duration={200}
-            onClick={() => closeMenu()}
-            className="flex flex-col text-center space-y-2"
-          >
-            <span className="text-AAsecondary text-xs font-mono">03.</span>
-            <span
-              className="text-white font-Text2 text-sm sm:text-base
-             hover:text-AAsecondary hover:cursor-pointer duration-300"
-            >
-              Work
-            </span>
-          </Link>
-          <Link
-            to="GetInTouchSection"
-            spy={true}
-            smooth={true}
-            offset={100}
-            duration={200}
-            onClick={() => closeMenu()}
-            className="flex flex-col text-center space-y-2"
-          >
-            <span className="text-AAsecondary text-xs font-mono">04.</span>
-            <span
-              className="text-white font-Text2 text-sm sm:text-base
-             hover:text-AAsecondary hover:cursor-pointer duration-300"
-            >
-              Contact
-            </span>
-          </Link>
+              {/* <span className="text-AAsecondary text-xs font-mono">{"0"+(idx+1)+". "}</span> */}
+              <span
+                className="text-white font-Text2 text-sm sm:text-base
+              hover:text-AAsecondary hover:cursor-pointer duration-300"
+              >
+                {t(menu.label)}
+              </span>
+            </Link>
+          ))}
           <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
             <button
               className="rounded border font-Text2  border-AAsecondary

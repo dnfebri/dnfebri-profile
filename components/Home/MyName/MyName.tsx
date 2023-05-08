@@ -2,14 +2,11 @@ import React from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
-// import { Trans, useTranslation } from "react-i18next";
 import i18next, { t } from "i18next";
 import { Trans } from "react-i18next";
 
 export default function MyName(props: { finishedLoading: boolean }) {
   const router = useRouter();
-  // const { t } = useTranslation();
-  // console.log(t("common.test"));
   
   return (
     <div

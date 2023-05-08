@@ -55,7 +55,7 @@ export default function Home() {
 
  
 
-  console.log("Portfolio Rendered...");
+  // console.log("Portfolio Rendered...");
   const meta = {
     title: "Abdellatif Anaflous - Software Engineer",
     description: `I've been working on Software development for 5 years straight. Get in touch with me to know more.`,
