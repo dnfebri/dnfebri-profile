@@ -1,7 +1,16 @@
 {
   "myName": {
     "title": "Saya membuat & membawa ide-ide unik.",
-    "subtitle": "I'm a <span>software engineer</span> skilled in problem-solving and specializing in building <br/> (and occasionally designing) exceptional digital experiences. Currently.<br/> I'm focused on creating and deploying <span>Smart Contracts</span> on the Blockchain.",
-    "myResume": "Check out my resume!"
+    "subtitle": "Saya seorang <span>software engineer</span> yang ahli dalam pemecahan masalah dan terkadang merancang pengalaman digital yang luar biasa. <br/> Saya senang dalam pengembangan perangkat lunak frontend / backend (full stack) mulai tahun 2020.<br/> Saya juga tertarik untuk membuat dan penerapan <span>Smart Contracts</span> di Blockchain dan sekarang saya masih belajar tentang teknologi Blockchain.",
+    "myResume": "Lihat resume saya"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "description": [
+      "Hallo, Nama saya Febri, saya lahir di Sidoarjo, 1 November 1995, beragama Islam, single, saya anak pertama dari dua bersaudara. Pendidikan terakhir saya adalah Sarjana Teknik Informatika. Saya memiliki pengalaman sebagai programmer Web / programmer Fullstack dari tahun 2020.",
+      "Ketertarikan saya pada ilmu komputer dimulai pada tahun 2012 ketika saya mempelajari aplikasi untuk belajar sejak sekolah menengah — ternyata skill programming itu penting untuk mencapai itu, perjalanan saya dengan programming dimulai dari saat itu",
+      "Sampai saat ini saya sering mengerjakan project dari klien yang masih mempercayai saya untuk membuat/mengembangkan aplikasi.",
+      "Berikut adalah beberapa teknologi yang telah saya gunakan baru-baru ini:"
+    ]
   }
 }

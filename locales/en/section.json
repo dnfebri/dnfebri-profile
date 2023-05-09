@@ -1,7 +1,16 @@
 {
   "myName": {
     "title": "I make & bring unique ideas.",
-    "subtitle": "I'm a <span>software engineer</span> skilled in problem-solving and specializing in building <br/> (and occasionally designing) exceptional digital experiences. Currently.<br/> I'm focused on creating and deploying <span>Smart Contracts</span> on the Blockchain.",
-    "myResume": "Check out my resume!"
+    "subtitle": "I'm a <span>software engineer</span> skilled in problem-solving and occasionally designing exceptional digital experiences. <br/> I'm happy in frontend / backend (full stack) software development from 2020.<br/> I'm also interested in creating and deployment <span>Smart Contracts</span> on the Blockchain and now I am still learning about Blockchain technology.",
+    "myResume": "Check out my resume"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "description": [
+      "Hallo, My name is Febri, I'm born in Sidoarjo, November 1, 1995, Muslim, single, I am the first child of two siblings. My last education is Bachelor of Informatics Engineering. I have experience as a Web programmer / Fullstack programmer from 2020.",
+      "My interest in computer science started back in 2012 when I was studying apps for learning since high school — it turns out programming skills are essential to achieve that, my journey with programming started from that time",
+      "Until now, I often work on projects from clients who still trust me to create/develop applications.",
+      "Here are a few technologies I've been working with recently:"
+    ]
   }
 }

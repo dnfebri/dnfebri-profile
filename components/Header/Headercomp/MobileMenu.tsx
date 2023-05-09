@@ -2,6 +2,7 @@ import { t } from "i18next";
 import { MENUS } from "../../../constant/header";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import { Link } from "react-scroll";
+import TranslationSelect from "./TranslationSelect";
 const MobileMenu = props => {
   const closeMenu = () => {
     props.setRotate(!props.rotate);
@@ -43,6 +44,12 @@ const MobileMenu = props => {
               </span>
             </Link>
           ))}
+          <TranslationSelect
+            rotate={props.rotate}
+            setRotate={props.setRotate}
+            setShowElement={props.setShowElement}
+            ShowElement={props.ShowElement}
+          />
           <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
             <button
               className="rounded border font-Text2  border-AAsecondary

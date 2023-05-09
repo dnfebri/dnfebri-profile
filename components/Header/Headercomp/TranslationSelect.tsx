@@ -1,10 +1,14 @@
 import { useRouter } from "next/router";
 import React from "react";
 
-const TranslationSelect = () => {
+const TranslationSelect = props => {
   const { locale, locales, push, asPath } = useRouter();
   const selectLng = (e: { target: { value: string } }) => {
     push(asPath, undefined, { locale: e.target.value });
+    if (props.rotate) {
+      props.setRotate(!props.rotate);
+      props.setShowElement(!props.ShowElement);
+    }
   };
 
   return (
