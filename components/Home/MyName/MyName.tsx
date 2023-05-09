@@ -10,9 +10,9 @@ export default function MyName(props: { finishedLoading: boolean }) {
   
   return (
     <div
-      
-      className="h-full flex flex-col justify-center
-      px-8 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 py-32 sm:py-52  "
+      className={`h-full flex flex-col justify-center
+      px-8 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 
+      ${props.finishedLoading && "py-32 sm:py-52"}`}
     >
       
         <motion.span
@@ -24,9 +24,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
           }}
           className="text-AAsecondary font-mono"
         >
-          {/* Hi, my name is */}
           {t("common.hiMyNameIs")}
-          {/* <Trans i18nKey="common.hiMyNameIs" /> */}
         </motion.span>
         <motion.h1
           initial={{ y: 10, opacity: 0 }}
@@ -37,7 +35,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
           }}
           className="text-gray-300 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
         >
-          Anaflous Abdellatif.
+          Dwi Nofebri.
         </motion.h1>
         <motion.h2
           initial={{ y: 10, opacity: 0 }}
@@ -48,7 +46,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
           }}
           className="text-gray-400 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
         >
-          I make ideas & things alive.
+          {t("section.myName.title")}
         </motion.h2>
 
         <motion.h3
@@ -60,11 +58,22 @@ export default function MyName(props: { finishedLoading: boolean }) {
           }}
           className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
         >
-          I&apos;m a <span className="text-AAsecondary">software engineer</span> skilled in problem-solving and specializing in building
+          <Trans
+            i18nKey="section.myName.subtitle"
+            components={{
+              span: (
+                <span className="text-AAsecondary" />
+              ),
+              br: (
+                <br className="lg:block hidden" />
+              ),
+            }}
+          />
+          {/* I&apos;m a <span className="text-AAsecondary">software engineer</span> skilled in problem-solving and specializing in building
           <br className="md:block hidden" /> (and occasionally designing) exceptional digital experiences. Currently.{" "}
           <br className="md:block hidden" />
           I&apos;m focused on creating and deploying <span className="text-AAsecondary">Smart Contracts</span> on the
-          Blockchain.
+          Blockchain. */}
         </motion.h3>
         <motion.div
           initial={{ y: 10, opacity: 0 }}
@@ -80,7 +89,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
           <button
             className="bg-AAprimary text-AAsecondary border rounded px-4 sm:px-8 py-3 sm:py-4 border-AAsecondary"
           >
-            Check out my resume!
+            {t("section.myName.myResume")}
           </button>
           </a>
         </motion.div>
