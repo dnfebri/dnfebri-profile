@@ -1,8 +1,9 @@
 <div align="center">
   <img alt="Logo" src="https://user-images.githubusercontent.com/62770500/199333052-3cd38b31-7e77-4883-a1ff-a037afcc0492.png" width="100" />
+  ![icon-dn](https://user-images.githubusercontent.com/23102817/236991182-493087a6-f31b-47ad-803b-111b5073530a.png)
 </div>
 <h1 align="center">
-  anaflous.com - v1
+  dnfebri.com - v1
 </h1>
 <p align="center">
   The first iteration of <a href="https://anaflous.com" target="_blank">anaflous.com</a> built with <a href="https://nextjs.org/" target="_blank">Nextjs</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
