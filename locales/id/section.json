@@ -5,12 +5,48 @@
     "myResume": "Lihat resume saya"
   },
   "aboutMe": {
-    "title": "About Me",
+    "title": "Tentang Saya",
     "description": [
-      "Hallo, Nama saya Febri, saya lahir di Sidoarjo, 1 November 1995, beragama Islam, single, saya anak pertama dari dua bersaudara. Pendidikan terakhir saya adalah Sarjana Teknik Informatika. Saya memiliki pengalaman sebagai programmer Web / programmer Fullstack dari tahun 2020.",
+      "Hallo, Nama saya Febri, saya lahir di Sidoarjo, 1 November 1995, beragama Islam, belum meikah, saya anak pertama dari dua bersaudara, Alamat tinggal saya di Kalitengah Tanggulangin sidoarjo Jawa Timur. Pendidikan terakhir saya adalah Sarjana Teknik Informatika. Saya memiliki pengalaman sebagai programmer Web / programmer Fullstack dari tahun 2020.",
       "Ketertarikan saya pada ilmu komputer dimulai pada tahun 2012 ketika saya mempelajari aplikasi untuk belajar sejak sekolah menengah — ternyata skill programming itu penting untuk mencapai itu, perjalanan saya dengan programming dimulai dari saat itu",
       "Sampai saat ini saya sering mengerjakan project dari klien yang masih mempercayai saya untuk membuat/mengembangkan aplikasi.",
       "Berikut adalah beberapa teknologi yang telah saya gunakan baru-baru ini:"
     ]
+  },
+  "workExperience": {
+    "title": "Pengalaman Kerja Saya",
+    "urbanAthletes": {
+      "title": "IT Programmer <span>@ Full Stack</span>",
+      "date": "Juni 2021 - Fubruari 2023",
+      "description": [
+        {
+          "text": "Back up semua pekerjaan yang berhubungan dengan IT, seperti IT Support, instalasi komputer dan jaringan komputer",
+          "keywords": [
+            "IT Support"
+          ]
+        },
+        {
+          "text": "Bekerja dengan berbagai bahasa, platform, kerangka kerja, dan sistem manajemen konten seperti PHP, JavaScript, Laravel, Next.js/React, VPS",
+          "keywords": [
+            "Laravel",
+            "Next.js/React",
+            "VPS"
+          ]
+        },
+        {
+          "text": "Membangun dan mengembangkan projek dari setiap manajemen serta mengimplementasikan ke aplikasi",
+          "keywords": []
+        },
+        {
+          "text": "Saya juga sudah membuat sistem Get Way yang diimplementasikan pada mesin Turnstile yang terhubung dengan CRM, dibuat untuk anggota yang masuk dan keluar, menggunakan Raspberry pi",
+          "keywords": [
+            "Get Way",
+            "Turnstile",
+            "CRM",
+            "Raspberry pi"
+          ]
+        }
+      ]
+    }
   }
 }
