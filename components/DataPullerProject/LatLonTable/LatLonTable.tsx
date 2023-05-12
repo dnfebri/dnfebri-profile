@@ -1,7 +1,7 @@
 import React from "react";
 type Props = {
-  type;
-  location;
+  type: any;
+  location: any;
 };
 export default function LatLonTable(props: Props) {
   switch (props.type) {
@@ -12,7 +12,7 @@ export default function LatLonTable(props: Props) {
   }
 }
 
-const LatLongTableDesktop = location => {
+const LatLongTableDesktop = (location: any) => {
   return (
     <table className="md:block hidden font-mono">
       <tbody className="border-2  md:text-sm text-xs">
@@ -29,7 +29,7 @@ const LatLongTableDesktop = location => {
   );
 };
 
-const LatLongTableMobile = location => {
+const LatLongTableMobile = (location: any) => {
   return (
     <table className="md:hidden block font-mono">
       <tbody className="border-2  md:text-xl text-xs">

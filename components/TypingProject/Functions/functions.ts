@@ -1,12 +1,14 @@
-import { wordsStatus,Data,ActiveWordWithIndex } from "../Types/types";
-
+// @ts-nocheck
+import { wordsStatus, Data, ActiveWordWithIndex } from "../Types/types";
 /**
  * @note use minLength & maxLength to limit the quote length
  * @default_URL : https://api.quotable.io/random?minLength=100&maxLength=140
  */
 export const getData = async (
   arg_state: React.Dispatch<React.SetStateAction<Data>>,
-  setActiveWordWithIndex: React.Dispatch<React.SetStateAction<ActiveWordWithIndex>>,
+  setActiveWordWithIndex: React.Dispatch<
+    React.SetStateAction<ActiveWordWithIndex>
+  >,
   setRoundCounter: React.Dispatch<React.SetStateAction<number>>,
   roundCounter: number
 ) => {
@@ -100,19 +102,25 @@ export const handleOnChangeInput = (
   input: string,
   event: React.ChangeEvent<HTMLInputElement>,
   activeWordWithIndex: ActiveWordWithIndex,
-  setActiveWordWithIndex:React.Dispatch<React.SetStateAction<ActiveWordWithIndex>>,
-  myText:Data,
-  setMyText:React.Dispatch<React.SetStateAction<Data>>,
-  setIsFinished:React.Dispatch<React.SetStateAction<boolean>>,
-  timerCountingInterval:React.MutableRefObject<undefined>,
-  updateStatistics:() => void,
+  setActiveWordWithIndex: React.Dispatch<
+    React.SetStateAction<ActiveWordWithIndex>
+  >,
+  myText: Data,
+  setMyText: React.Dispatch<React.SetStateAction<Data>>,
+  setIsFinished: React.Dispatch<React.SetStateAction<boolean>>,
+  timerCountingInterval: React.MutableRefObject<undefined>,
+  updateStatistics: () => void
 ) => {
   /**
    * @nextForLoop
    * this for loop to give the char its default color back, starting from activeWord first char index
    * this loop will help  when user delete a character
    */
-  for (let j = activeWordWithIndex.wordDetail.indexFrom; j < myText[1].length; j++) {
+  for (
+    let j = activeWordWithIndex.wordDetail.indexFrom;
+    j < myText[1].length;
+    j++
+  ) {
     myText[1][j].charColor = "text-gray-500";
   }
 
@@ -120,7 +128,9 @@ export const handleOnChangeInput = (
   let targetWordIndexIncrement = activeWordWithIndex.wordDetail.indexFrom;
   input.split("").forEach((element, index) => {
     myText[1][targetWordIndexIncrement].charColor =
-      element === myText[1][targetWordIndexIncrement].char ? "text-AAsecondary" : "text-AAError";
+      element === myText[1][targetWordIndexIncrement].char
+        ? "text-AAsecondary"
+        : "text-AAError";
     targetWordIndexIncrement++;
   });
   // checks if input is equal to the active word ( true => set inputValue to "" )

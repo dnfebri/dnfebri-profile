@@ -1,3 +1,4 @@
+// @ts-nocheck
 const HasZipCode = obj => {
   for (const x of obj) {
     const elem = x.address_components;
@@ -21,7 +22,7 @@ export default async function handler(req, res) {
       .then(res => res.json())
       .then(data => {
         const result = data.results;
-           return HasZipCode(result);
+        return HasZipCode(result);
         // return data;
       })
       .catch(err => {

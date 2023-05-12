@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-
 // this will return min and sec Tens and Units example of of seconds is 180 sec return is [3,0,0]
 const getMinutesAndSeconds = (secondsCounts: number) => {
   if (secondsCounts >= 60) {
@@ -28,11 +27,11 @@ export default function TimerSpan({
   seconds,
   timerCountingInterval,
   updateStatistics,
-  
-}) {
+}: any) {
   const [secondsState, setSecondsState] = useState<number>(seconds.current);
   const timerSpanRef = useRef<HTMLSpanElement>(null);
-  const [timerFinishedByItSelf,setTimerIsFinishedByItSelf] = useState<boolean>(false);
+  const [timerFinishedByItSelf, setTimerIsFinishedByItSelf] =
+    useState<boolean>(false);
 
   useEffect(() => {
     if (inputLostFocus) {
@@ -45,7 +44,9 @@ export default function TimerSpan({
 
         if (seconds.current > 0) {
           if (timerSpanRef.current) {
-            const [minutes, secondsTen, secondsUnit] = getMinutesAndSeconds(seconds.current);
+            const [minutes, secondsTen, secondsUnit] = getMinutesAndSeconds(
+              seconds.current
+            );
             timerSpanRef.current.innerText = `${minutes}:${secondsTen}${secondsUnit}`;
           }
         } else {
@@ -63,7 +64,12 @@ export default function TimerSpan({
       setIsFinished(true);
       clearInterval(timerCountingInterval.current);
     }
-  }, [setIsFinished, timerCountingInterval, timerFinishedByItSelf, updateStatistics]);
+  }, [
+    setIsFinished,
+    timerCountingInterval,
+    timerFinishedByItSelf,
+    updateStatistics,
+  ]);
   return (
     <>
       {secondsState <= 5 && (
@@ -88,7 +94,12 @@ export default function TimerSpan({
           0:15
         </motion.span>
       )}
-      {secondsState > 15 && <span ref={timerSpanRef} className="text-gray-400 md:text-xl text-sm"></span>}
+      {secondsState > 15 && (
+        <span
+          ref={timerSpanRef}
+          className="text-gray-400 md:text-xl text-sm"
+        ></span>
+      )}
     </>
   );
 }

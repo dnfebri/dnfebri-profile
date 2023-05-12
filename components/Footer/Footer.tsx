@@ -4,7 +4,7 @@ import LinkedinIcon from "../Icons/LinkedinIcon";
 import InstagramIcon from "../Icons/InstagramIcon";
 import YoutubeIcon from "../Icons/YoutubeIcon";
 import { ICANS_DATA } from "../Icons/UtilsData";
-const ClickableIcon = props => {
+const ClickableIcon = (props: { href: string; Icon: any }) => {
   return (
     <a href={props.href} className="" target={"_blank"} rel="noreferrer">
       <props.Icon

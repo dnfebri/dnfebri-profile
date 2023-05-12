@@ -3,7 +3,12 @@ import { MENUS } from "../../../constant/header";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import { Link } from "react-scroll";
 import TranslationSelect from "./TranslationSelect";
-const MobileMenu = props => {
+const MobileMenu = (props: {
+  setRotate: (arg0: boolean) => void;
+  rotate: any;
+  setShowElement: (arg0: boolean) => void;
+  ShowElement: any;
+}) => {
   const closeMenu = () => {
     props.setRotate(!props.rotate);
     props.setShowElement(!props.ShowElement);

@@ -2,7 +2,10 @@ import React from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import { ICANS_DATA } from "../../Icons/UtilsData";
 
-const IconClickableWithAnimation = props => {
+const IconClickableWithAnimation = (props: {
+  href: string | undefined;
+  Icon: any;
+}) => {
   return (
     <motion.div
       whileHover={{

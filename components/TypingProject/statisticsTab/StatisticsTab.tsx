@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -34,7 +35,6 @@ const isTopScore = (index: number, statistics: Statistics) => {
   ) : (
     <></>
   );
- 
 };
 
 type Statistics = [{ round: number; wpm: number; accuracy: number }?];
@@ -52,10 +52,14 @@ export default function StatisticsTab({
     <>
       <div className="w-full flex flex-col space-y-4">
         <div className="w-full flex justify-center">
-          <span className="sm:text-xl text-sm text-gray-400 underline ">Statistics</span>
+          <span className="sm:text-xl text-sm text-gray-400 underline ">
+            Statistics
+          </span>
         </div>
         <div className="w-full font-mono text-AAsecondary flex flex-row justify-between px-2">
-          <div className="sm:text-base text-sm ">round {round.toString()} : </div>
+          <div className="sm:text-base text-sm ">
+            round {round.toString()} :{" "}
+          </div>
           <div className="sm:text-base text-sm ">{finishedTime} sec</div>
         </div>
       </div>
@@ -66,13 +70,22 @@ export default function StatisticsTab({
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-500 border border-gray-500">
                   <tr>
-                    <th scope="col" className="px-6 py-3 text-xs font-bold text-left text-gray-300 uppercase ">
+                    <th
+                      scope="col"
+                      className="px-6 py-3 text-xs font-bold text-left text-gray-300 uppercase "
+                    >
                       ROUND
                     </th>
-                    <th scope="col" className="px-6 py-3 text-xs font-bold text-left text-gray-300 uppercase ">
+                    <th
+                      scope="col"
+                      className="px-6 py-3 text-xs font-bold text-left text-gray-300 uppercase "
+                    >
                       Wpm
                     </th>
-                    <th scope="col" className="px-6 py-3 text-xs font-bold text-left text-gray-300 uppercase ">
+                    <th
+                      scope="col"
+                      className="px-6 py-3 text-xs font-bold text-left text-gray-300 uppercase "
+                    >
                       Accuracy
                     </th>
                   </tr>
@@ -100,22 +113,34 @@ export default function StatisticsTab({
                             },
                           }}
                         >
-                          <td className="px-6 py-4 text-sm font-medium  whitespace-nowrap">{item.round}</td>
+                          <td className="px-6 py-4 text-sm font-medium  whitespace-nowrap">
+                            {item.round}
+                          </td>
                           <td className="px-6 py-4 text-sm flex sm:flex-row  flex-col   whitespace-nowrap">
-                            <span className="sm:order-2 order-1 sm:pl-2">{isTopScore(index, statistics)}</span>
+                            <span className="sm:order-2 order-1 sm:pl-2">
+                              {isTopScore(index, statistics)}
+                            </span>
                             <span>{item.wpm} wpm </span>
                           </td>
 
-                          <td className="px-6 py-4 text-sm text-left  whitespace-nowrap">{item.accuracy}%</td>
+                          <td className="px-6 py-4 text-sm text-left  whitespace-nowrap">
+                            {item.accuracy}%
+                          </td>
                         </motion.tr>
                       ) : (
                         <tr key={index}>
-                          <td className="px-6 py-4 text-sm font-medium  whitespace-nowrap">{item.round}</td>
+                          <td className="px-6 py-4 text-sm font-medium  whitespace-nowrap">
+                            {item.round}
+                          </td>
                           <td className="px-6 py-4 text-sm flex sm:flex-row flex-col  whitespace-nowrap">
-                            <span className="sm:order-2 order-1 sm:pl-2">{isTopScore(index, statistics)}</span>
+                            <span className="sm:order-2 order-1 sm:pl-2">
+                              {isTopScore(index, statistics)}
+                            </span>
                             <span>{item.wpm} wpm </span>
                           </td>
-                          <td className="px-6 py-4 text-sm text-left  whitespace-nowrap">{item.accuracy}%</td>
+                          <td className="px-6 py-4 text-sm text-left  whitespace-nowrap">
+                            {item.accuracy}%
+                          </td>
                         </tr>
                       );
                     })}
