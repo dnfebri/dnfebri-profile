@@ -1,13 +1,12 @@
 import "../styles/globals.css";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import AppContext from "../components/AppContextFolder/AppContext";
 import { useRef, useState } from "react";
 // import "../locales";
 import { useRouter } from "next/router";
 import i18n from "../locales";
 
-function MyApp({ Component, pageProps }) {
-
+function MyApp({ Component, pageProps }: any) {
   const router = useRouter();
   if (router.locale) {
     i18n.changeLanguage(router.locale);
@@ -23,9 +22,9 @@ function MyApp({ Component, pageProps }) {
         scrolling: null,
         scrollSizeY: null,
       },
-      Scrolling:{
-        IntervalEvent:null
-      }
+      Scrolling: {
+        IntervalEvent: null,
+      },
     },
     userdata: {
       timerCookieRef: timerCookie,

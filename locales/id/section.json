@@ -15,6 +15,49 @@
   },
   "workExperience": {
     "title": "Pengalaman Kerja Saya",
+    "freelance": {
+      "title": "Full Stack Development",
+      "date": "Februari 2022 - sekarang",
+      "description": [
+        {
+          "text": "Membuat dan Pengembangan aplikasi berbasis Web dari klien dengan berbagai Framework seperti Laravel, Next, Express, React js",
+          "keywords": [
+            "Laravel",
+            "Next Js",
+            "Express",
+            "React Js"
+          ]
+        },
+        {
+          "text": "Saya juga menguasai dan pernah membuat Aplikasi Mobile menggunakan React Native",
+          "keywords": [
+            "React Native"
+          ]
+        }
+      ]
+    },
+    "amd": {
+      "title": "Frontend Development <span>@ WEB 3</span>",
+      "date": "November 2022 - April 2023",
+      "description": [
+        {
+          "text": "Pengembangan WEB 3 yang dikerjakan secara tim menggunakan Framework NEXT, React typescript",
+          "keywords": [
+            "WEB 3",
+            "NEXT",
+            "React typescript"
+          ]
+        },
+        {
+          "text": "Di sini saya belajar bagaimana caranya membuat Smart Contract Menggunakan Hardhat, bahasa pemrogramman Solidity",
+          "keywords": [
+            "Smart Contract",
+            "Hardhat",
+            "Solidity"
+          ]
+        }
+      ]
+    },
     "urbanAthletes": {
       "title": "IT Programmer <span>@ Full Stack</span>",
       "date": "Juni 2021 - Fubruari 2023",
@@ -38,12 +81,12 @@
           "keywords": []
         },
         {
-          "text": "Saya juga sudah membuat sistem Get Way yang diimplementasikan pada mesin Turnstile yang terhubung dengan CRM, dibuat untuk anggota yang masuk dan keluar, menggunakan Raspberry pi",
+          "text": "Saya juga sudah membuat sistem Getway yang diimplementasikan pada mesin Turnstile yang terhubung dengan CRM, dibuat untuk anggota yang masuk dan keluar, menggunakan Raspberry Pi",
           "keywords": [
-            "Get Way",
+            "Getway",
             "Turnstile",
             "CRM",
-            "Raspberry pi"
+            "Raspberry Pi"
           ]
         }
       ]

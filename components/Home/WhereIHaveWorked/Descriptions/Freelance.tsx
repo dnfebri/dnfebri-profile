@@ -5,9 +5,9 @@ import { t } from "i18next";
 import { Trans } from "react-i18next";
 import { TDescription } from "../../../../Types/type";
 
-export default function UrbanAthletes() {
+export default function Freelance() {
   const description = t<any, any>(
-    "section.workExperience.urbanAthletes.description",
+    "section.workExperience.freelance.description",
     {
       returnObjects: true,
     }
@@ -20,7 +20,7 @@ export default function UrbanAthletes() {
           {/* Title */}
           <p className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
             <Trans
-              i18nKey={"section.workExperience.urbanAthletes.title"}
+              i18nKey={"section.workExperience.freelance.title"}
               components={{
                 span: <span className="text-AAsecondary" />,
               }}
@@ -28,7 +28,7 @@ export default function UrbanAthletes() {
           </p>
           {/* Date */}
           <span className="font-mono text-xs text-gray-500">
-            {t("section.workExperience.urbanAthletes.date")}
+            {t("section.workExperience.freelance.date")}
           </span>
         </div>
         <div className="flex flex-col space-y-4 sm:text-sm text-xs">

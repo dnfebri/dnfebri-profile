@@ -14,6 +14,82 @@
     ]
   },
   "workExperience": {
-    "title": "I Have Ever Worked"
+    "title": "I Have Ever Worked",
+    "freelance": {
+      "title": "Full Stack Development",
+      "date": "Februari 2022 - so far",
+      "description": [
+        {
+          "text": "Creating and development Web applications from clients with various frameworks such as Laravel, Next, Express, React js",
+          "keywords": [
+            "Laravel",
+            "Next Js",
+            "Express",
+            "React Js"
+          ]
+        },
+        {
+          "text": "I also master and have made Mobile Applications using React Native",
+          "keywords": [
+            "React Native"
+          ]
+        }
+      ]
+    },
+    "amd": {
+      "title": "Frontend Development <span>@ WEB 3</span>",
+      "date": "November 2022 - April 2023",
+      "description": [
+        {
+          "text": "WEB3 development is done as a team using the Framework NEXT, React typescript",
+          "keywords": [
+            "WEB 3",
+            "NEXT",
+            "React typescript"
+          ]
+        },
+        {
+          "text": "Here I learned how to make a Smart Contract Using Hardhat, the Solidity programming language",
+          "keywords": [
+            "Smart Contract",
+            "Hardhat",
+            "Solidity"
+          ]
+        }
+      ]
+    },
+    "urbanAthletes": {
+      "title": "IT Programmer <span>@ Full Stack</span>",
+      "date": "Juni 2021 - Fubruari 2023",
+      "description": [
+        {
+          "text": "Back up all IT-related work, such as IT support, computer installation and computer networks",
+          "keywords": [
+            "IT Support"
+          ]
+        },
+        {
+          "text": "Works with multiple languages, platforms, frameworks and content management systems like PHP, JavaScript, Laravel, Next.js/React, VPS",
+          "keywords": [
+            "Laravel",
+            "Next.js/React",
+            "VPS"
+          ]
+        },
+        {
+          "text": "Build and develop projects from each management and implement them into applications",
+          "keywords": []
+        },
+        {
+          "text": "I've also created a Gateway system implemented on a CRM connected Turnstile machine, created for incoming and outgoing members, using a Raspberry Pi",
+          "keywords": [
+            "Getway",
+            "Turnstile",
+            "CRM",
+            "Raspberry Pi"
+          ]
+        }
+      ]
+    }
   }
 }
