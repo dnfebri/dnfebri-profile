@@ -1,8 +1,13 @@
 import React from "react";
 import ArrowIcon from "../../Icons/ArrowIcon";
+import { t } from "i18next";
 export default function GetInTouch() {
   return (
-    <div id="GetInTouchSection" data-aos="fade-up" className="flex flex-col space-y-4 w-full h-96 items-center bg-AAprimary">
+    <div
+      id="GetInTouchSection"
+      data-aos="fade-up"
+      className="flex flex-col space-y-4 w-full h-96 items-center bg-AAprimary"
+    >
       {/* // ? Title === > What's Next?  */}
       <div className="flex flex-row items-center ">
         <ArrowIcon className="flex-none h-5 md:h-6 w-5 md:w-5 text-AAsecondary" />
@@ -12,26 +17,28 @@ export default function GetInTouch() {
             04.
           </span>
           <span className=" font-sans text-AAsecondary text-base">
-            What&apos;s Next?
+            {t("section.contact.title")}
           </span>
         </div>
       </div>
       {/* // ? Get In Touch */}
       <span className="text-gray-200 text-3xl sm:text-4xl font-bold tracking-wider opacity-85">
-        Get In Touch
+        {t("section.contact.subtitle")}
       </span>
       <p className="flex font-Header tracking-wider text-gray-400 text-center px-6 sm:px-16 md:px-0 md:w-[600px]">
-        Although I&apos;m currently looking for any new opportunities, my inbox
-        is always open. Whether you have a question or just want to say hi, I&apos;ll
-        try my best to get back to you!
+        {t("section.contact.description")}
       </p>
       <div className="pt-4">
-        <a href="mailto:abdellatif@anaflous.com" target={"_blank"} rel="noreferrer">
+        <a
+          href="mailto:abdellatif@anaflous.com"
+          target={"_blank"}
+          rel="noreferrer"
+        >
           <button
             className="font-mono text-sm text-AAsecondary border-AAsecondary 
                             px-8 py-4 border-[1.5px] rounded "
           >
-            Say Hello
+            {t("section.contact.sayHello")}
           </button>
         </a>
       </div>

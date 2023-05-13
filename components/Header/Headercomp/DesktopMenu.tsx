@@ -55,7 +55,6 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           duration: props.finishedLoading ? 0 : 1.2,
           delay: props.finishedLoading ? 0 : 10.2,
         }}
-        // onClick={()=>{router.push("/resume.pdf")}}
         className="rounded-sm hover:bg-ResumeButtonHover"
       >
         <TranslationSelect />

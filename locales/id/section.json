@@ -91,5 +91,26 @@
         }
       ]
     }
+  },
+  "work": {
+    "title": "Some of the Apps I've Built",
+    "perikanan": {
+      "name": "Perikanan",
+      "description": "Lorem I had the opportunity to lead the <span>development</span> of a token project, which aimed to create a decentralized ecosystem for peer-to-peer transactions. Overseeing the planning and development of the project, including the design and implementation of the smart contract and blockchain technology. Here i share with you YPredict - v1 for the private sale."
+    },
+    "ypredict": {
+      "name": "aplikasi Name YPredict - v1",
+      "description": "Lorem I had the opportunity to lead the development of a token <span>project</span>, which aimed to create a decentralized ecosystem for peer-to-peer transactions. Overseeing the planning and development of the project, including the design and implementation of the smart contract and blockchain technology. Here i share with you YPredict - v1 for the private sale."
+    },
+    "example": {
+      "name": "Aplikasi Name example",
+      "description": "Lorem I had the opportunity to lead the <span>development</span> of a token <span>project</span>, which aimed to create a decentralized ecosystem for peer-to-peer transactions. Overseeing the planning and development of the project, including the design and implementation of the smart contract and blockchain technology. Here i share with you YPredict - v1 for the private sale."
+    }
+  },
+  "contact": {
+    "title": "What's Next?",
+    "subtitle": "Get In Touch",
+    "description": "Although I'm currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "sayHello": "Say Hello"
   }
 }
