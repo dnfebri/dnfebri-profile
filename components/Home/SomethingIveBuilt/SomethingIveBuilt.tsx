@@ -61,7 +61,7 @@ export default function SomethingIveBuilt() {
                   ></div>
                 </a>
                 <Img
-                  src={"/img/YPredict-v1.jpg"}
+                  src={row.image}
                   alt={"Project Screen shot"}
                   className={`w-full rounded h-full `}
                 />
@@ -76,7 +76,7 @@ export default function SomethingIveBuilt() {
                   <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
                   <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
                   <Img
-                    src={"/img/YPredict-v1.jpg"}
+                    src={row.image}
                     alt={"Project Screen shot"}
                     className={`w-full h-full object-cover object-center`}
                   />
@@ -119,7 +119,7 @@ export default function SomethingIveBuilt() {
                 >
                   {row.technology.map((tec, i) => (
                     <span key={i} className="pr-4 z-10">
-                      Token
+                      {tec}
                     </span>
                   ))}
                 </ul>
