@@ -94,13 +94,21 @@
   },
   "work": {
     "title": "Some of the Apps I've Built",
+    "fitnessworks": {
+      "name": "Fitnessworks",
+      "description": "Situs web profil perusahaan Fitnessworks cukup baru, saya mendesain dan membangunnya bersama dengan rekan kerja saya di departemen desain UI/UX. Website ini saya bangun dengan menggunakan framework <span>NextJs</span> agar kedepannya website ini dapat berinteraksi dengan pengguna."
+    },
     "perikanan": {
       "name": "Perikanan",
-      "description": "Lorem I had the opportunity to lead the <span>development</span> of a token project, which aimed to create a decentralized ecosystem for peer-to-peer transactions. Overseeing the planning and development of the project, including the design and implementation of the smart contract and blockchain technology. Here i share with you YPredict - v1 for the private sale."
+      "description": "Di website ini dibuat permintaan dari klien saya untuk mendukung pemasaran penjualan produk olahan ikan. Website ini juga bersifat dinamis, admin dapat mengedit produk yang ingin ditampilkan."
     },
-    "ypredict": {
-      "name": "aplikasi Name YPredict - v1",
-      "description": "Lorem I had the opportunity to lead the development of a token <span>project</span>, which aimed to create a decentralized ecosystem for peer-to-peer transactions. Overseeing the planning and development of the project, including the design and implementation of the smart contract and blockchain technology. Here i share with you YPredict - v1 for the private sale."
+    "simpleSosmed": {
+      "name": "Sosial Media Sederhana",
+      "description": "Saya membangun Media Sosial Sederhana ini menggunakan <span>React Js</span> sebagai Frontend dan <span>Express Js</span> sebagai Backend. Website ini saya buat semata-mata karena terinspirasi dari Facebook, memang website ini masih jauh dari sempurna dan saya masih ingin mengembangkannya."
+    },
+    "urban": {
+      "name": "Urban Athletes",
+      "description": "Website company profile Urban Athletes ini adalah perusahaan induk dari Fitnessworks, sebelumnya website ini dibangun menggunakan Wordpress kemudian saya bangun kembali menggunakan framework <span>Laravel</span>. Website ini sudah terkoneksi dengan aplikasi internal perusahaan dengan menggunakan <span>Rest API</span> untuk menampilkan waktu dan jadwal kelas."
     },
     "example": {
       "name": "Aplikasi Name example",

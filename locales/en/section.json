@@ -92,6 +92,29 @@
       ]
     }
   },
+  "work": {
+    "title": "Some of the Apps I've Built",
+    "fitnessworks": {
+      "name": "Fitnessworks",
+      "description": "The Fitnessworks company profile website is quite new, I designed and built it together with my colleagues in the UI/UX design department. I built this website using the <span>NextJs</span> framework so that in the future this website can interact with users."
+    },
+    "perikanan": {
+      "name": "Perikanan",
+      "description": "On this website, requests from my clients are made to support the marketing of sales of processed fish products. This website is also dynamic, admin can edit the products they want to display."
+    },
+    "simpleSosmed": {
+      "name": "Simple Social Media",
+      "description": "I built this Simple Social Media using <span>React Js</span> as the Frontend and <span>Express Js</span> as the Backend. I built this website solely because it was inspired by Facebook, indeed this website is still far from perfect and I still want to develop it"
+    },
+    "urban": {
+      "name": "Urban Athletes",
+      "description": "This Urban Athletes company profile website is the parent company of Fitnessworks, previously this website was built using Wordpress and then I rebuilt it using the <span>Laravel</span> framework. This website is already connected to the company's internal application by consuming the <span>Rest API</span> to display class times and schedules."
+    },
+    "example": {
+      "name": "Aplikasi Name example",
+      "description": "Lorem I had the opportunity to lead the <span>development</span> of a token <span>project</span>, which aimed to create a decentralized ecosystem for peer-to-peer transactions. Overseeing the planning and development of the project, including the design and implementation of the smart contract and blockchain technology. Here i share with you YPredict - v1 for the private sale."
+    }
+  },
   "contact": {
     "title": "What's Next?",
     "subtitle": "Get In Touch",

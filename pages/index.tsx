@@ -68,7 +68,7 @@ export default function Home() {
 
   // console.log("Portfolio Rendered...");
   const meta = {
-    title: "Dwi Nofebri - Software Engineer",
+    title: "Dwi Nofebri - Software Development",
     description: `I've been working on software development from 2020 onwards. Contact me to find out more.`,
     image: "/titofCercle.png",
     type: "website",

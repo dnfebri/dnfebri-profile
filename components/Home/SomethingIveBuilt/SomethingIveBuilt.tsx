@@ -94,9 +94,9 @@ export default function SomethingIveBuilt() {
                     idx % 2 !== 0 && "md:items-end"
                   }`}
                 >
-                  <span className="text-AAsecondary text-base">
+                  {/* <span className="text-AAsecondary text-base">
                     Recent Project
-                  </span>
+                  </span> */}
                   <Link href={"/userdatapuller"}>
                     <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
                       {t(`${row.name}`)}
