@@ -110,6 +110,10 @@
       "name": "Urban Athletes",
       "description": "This Urban Athletes company profile website is the parent company of Fitnessworks, previously this website was built using Wordpress and then I rebuilt it using the <span>Laravel</span> framework. This website is already connected to the company's internal application by consuming the <span>Rest API</span> to display class times and schedules."
     },
+    "firstMobileApp": {
+      "name": "My first mobile App",
+      "description": "This Mobile App is the first application I made using <span>React Native</span>, this application consumes a dummy API to display products."
+    },
     "example": {
       "name": "Aplikasi Name example",
       "description": "Lorem I had the opportunity to lead the <span>development</span> of a token <span>project</span>, which aimed to create a decentralized ecosystem for peer-to-peer transactions. Overseeing the planning and development of the project, including the design and implementation of the smart contract and blockchain technology. Here i share with you YPredict - v1 for the private sale."

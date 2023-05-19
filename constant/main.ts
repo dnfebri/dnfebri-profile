@@ -55,4 +55,13 @@ export const WORK_PROJECT: IWorkProject[] = [
     technology: ["Laravel", "Tailwindcss"],
     linkCode: "https://github.com/dnfebri/kemitraan-urbanathletes",
   },
+  {
+    linkApp:
+      "https://drive.google.com/file/d/1gZymXQQSAF0ltKw6zsnnkNFCwrBJxag-/view?usp=share_link",
+    image: "/img/project/firstMobileApp.png",
+    name: "section.work.firstMobileApp.name",
+    description: "section.work.firstMobileApp.description",
+    technology: ["React Native"],
+    linkCode: "https://github.com/dnfebri/test-dss-react_native",
+  },
 ];
