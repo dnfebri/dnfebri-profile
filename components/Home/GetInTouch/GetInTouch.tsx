@@ -30,7 +30,7 @@ export default function GetInTouch() {
       </p>
       <div className="pt-4">
         <a
-          href="mailto:abdellatif@anaflous.com"
+          href="mailto:dwinofebri@gmail.com"
           target={"_blank"}
           rel="noreferrer"
         >

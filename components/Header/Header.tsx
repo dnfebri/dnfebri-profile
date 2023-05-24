@@ -108,7 +108,6 @@ const Header = (props: {
         } bg-AAprimary flex 
       justify-between px-6 sm:px-12 py-2 sm:py-4  transition duration-4000 translate-y-0 z-20`}
       >
-        {/* Logo A */}
         <Logo finishedLoading={props.finishedLoading} />
 
         {/* Hide icon Designed by me */}
