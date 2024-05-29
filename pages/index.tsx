@@ -94,37 +94,16 @@ export default function Home() {
         <meta name="twitter:image" content={meta.image} />
       </Head>
       <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
-        {context.sharedState.finishedLoading ? (
-          <></>
-        ) : ShowThisCantBeReached ? (
-          <ThisCantBeReached />
-        ) : (
-          <></>
-        )}
-        {context.sharedState.finishedLoading ? (
-          <></>
-        ) : ShowElement ? (
-          <Startup />
-        ) : (
-          <></>
-        )}
-        <Header
-          finishedLoading={context.sharedState.finishedLoading}
-          sectionsRef={homeRef}
-        />
-        <MyName finishedLoading={context.sharedState.finishedLoading} />
-        <SocialMediaArround
-          finishedLoading={context.sharedState.finishedLoading}
-        />
-        {context.sharedState.finishedLoading ? (
-          <AboutMe ref={aboutRef} />
-        ) : (
-          <></>
-        )}
-        {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
-        {context.sharedState.finishedLoading ? <SomethingIveBuilt /> : <></>}
-        {context.sharedState.finishedLoading ? <GetInTouch /> : <></>}
-        {context.sharedState.finishedLoading ? (
+        {/* {false ? <></> : false ? <ThisCantBeReached /> : <></>}
+        {false ? <></> : false ? <Startup /> : <></>} */}
+        <Header finishedLoading={true} sectionsRef={homeRef} />
+        <MyName finishedLoading={true} />
+        <SocialMediaArround finishedLoading={true} />
+        {true ? <AboutMe ref={aboutRef} /> : <></>}
+        {true ? <WhereIHaveWorked /> : <></>}
+        {true ? <SomethingIveBuilt /> : <></>}
+        {true ? <GetInTouch /> : <></>}
+        {true ? (
           <Footer
             githubUrl={"https://github.com/dnfebri/dnfebri-profile"}
             hideSocialsInDesktop={false}

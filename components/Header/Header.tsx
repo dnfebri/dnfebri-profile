@@ -74,7 +74,7 @@ const Header = (props: {
   useEffect(() => {
     setTimeout(() => {
       setShowElement(true);
-    }, 10400);
+    }, 5000);
   }, []);
 
   // console.log("rotate from header : ", rotate);
